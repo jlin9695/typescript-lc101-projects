@@ -43,4 +43,14 @@ export class Rocket implements Payload{
             return false;
         }
     }
+    addAstronaut(astronaut: Astronaut): boolean{
+        let person: boolean = this.canAdd(astronaut);
+        if (person === true){
+            this.astronauts.push(astronaut);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
