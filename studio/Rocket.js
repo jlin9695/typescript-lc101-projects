@@ -40,6 +40,16 @@ var Rocket = /** @class */ (function () {
             return false;
         }
     };
+    Rocket.prototype.addAstronaut = function (astronaut) {
+        var person = this.canAdd(astronaut);
+        if (person === true) {
+            this.astronauts.push(astronaut);
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
     return Rocket;
 }());
 exports.Rocket = Rocket;
