@@ -1,15 +1,15 @@
 import { Payload } from "./Payload";
 import { Cargo } from "./Cargo";
 import { Astronaut } from "./Astronaut";
-export class Rocket implements Payload{
+export class Rocket{
     //properties and methods here
     name: string;
     totalCapacityKg: number;
     CargoItems: Cargo[] = [];
     astronauts: Astronaut[] = [];
-    constructor(name: string, totalCapicityKg: number){
+    constructor(name: string, totalCapacityKg: number){
         this.name = name;
-        this.totalCapacityKg = totalCapicityKg;
+        this.totalCapacityKg = totalCapacityKg;
     }
     sumMass(items: Payload[]): number{
         let total: number = 0;

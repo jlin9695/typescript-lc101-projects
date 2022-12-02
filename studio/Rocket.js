@@ -2,11 +2,11 @@
 exports.__esModule = true;
 exports.Rocket = void 0;
 var Rocket = /** @class */ (function () {
-    function Rocket(name, totalCapicityKg) {
+    function Rocket(name, totalCapacityKg) {
         this.CargoItems = [];
         this.astronauts = [];
         this.name = name;
-        this.totalCapacityKg = totalCapicityKg;
+        this.totalCapacityKg = totalCapacityKg;
     }
     Rocket.prototype.sumMass = function (items) {
         var total = 0;
